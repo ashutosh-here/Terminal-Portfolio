@@ -111,3 +111,20 @@ function exit() {
   $('.tv').addClass('collapse');
   // term.disable();
 }
+
+$(window).resize(function(){
+if($(window).width() <540){
+    alert("Please use Computer!");
+}
+
+}); 
+
+$(document).ready(function(){
+    if(window.matchMedia("(max-width: 557px)").matches){
+        // The viewport is less than 768 pixels wide
+        alert("This is a mobile device.");
+    } else{
+        // The viewport is at least 768 pixels wide
+      //alert("This is a tablet or desktop.");
+    }
+});
